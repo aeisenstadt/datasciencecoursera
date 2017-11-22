@@ -1,0 +1,190 @@
+gitwd()
+getwd()
+read.csv("mydata.csv")
+dir()
+dir()
+getwd()
+dir()
+read.md("HellowWorld.md")
+myfunction()
+ls
+myfunction <- function(x){#
+	y<- rnorm(100)#
+	mean(y)#
+}
+ls
+ls()
+myfunction()
+getwd()
+dir()
+source("myfunction.R")
+ls()
+source("myfunction.R")
+second(4)
+second(4)
+second(4)
+second(4:10)
+clear
+x <- 1
+print(x)
+x
+x <- 12
+print (x)
+x
+msg <- "hello"
+msg
+ls()
+x <- 1:20
+ls()
+x
+1/0
+attributes(x)
+x <- c(0.5,0.6)
+x
+y <- c("a", T)
+y
+y <- c("a", 1.7)
+y
+y <- c(T, 1.7)
+y
+x <- 0:6
+x
+class (x)
+as.numeric(x)
+as.logical(x)
+as.character (x)
+as.complex(x)
+as.character(x)
+x
+x <- c("a", "b", "c")
+as.numeric(x)
+x <- list(1, "a", T)
+x
+x <- matrix(1:6, nrow =2, ncol = 3)
+x
+x <- 1:10
+x
+dim(x) <- c(2, 5)
+x
+x <- 1:3
+y <- 1:12
+y <- 10:12
+cbind(x,y)
+rbind(x,y)
+x <- c(1,2, NA, 10, 3)
+is.na(x)
+is.nan(x)
+x <- c(1,2, 0/0, 10,3)
+is.na(x)
+is.nan(x)
+x <- data.frame(foo = 1:4, bar = c(T,T,F,F))
+x
+x <. matrix(1:4, nrow =2, ncol =2)
+x <- matrix(1:4, nrow =2, ncol =2)
+dimnames(x) <- list(c("a", "b"), c("c","d"))
+x
+y <-data.frame( a =1, b="a")
+dput(y)
+dput(y, file = "y.R")
+new.y <- dget("y.R")
+new.y
+str(file)
+ls()
+x <-(c"a","b","c")
+x <-c()"a","b","c")
+x <-c("a","b","c")
+x[1]
+x[2]
+x[1:3]
+x[T]
+x[x> "a"]
+u <- x > "a"
+u
+u <- x >= "a"
+u
+x[u]
+u <- x > "a"
+x[u]
+x <-list(foo = 1:4, bar = 0.6)
+x[1]
+x[[1]]
+x$bar
+x[["bar"]]
+$bar
+x["bar"]
+x <-list(foo = 1:4, bar = 0.6, baz = "hello")
+x[c(1,3)]
+name <- "foo"
+x[[name]]
+x$name
+x$foo
+x <- list(a = list(10,12,14), b=c(3.14,2.81))
+x[c(1,3)]
+x[[c(1,3)]]
+x <- matrix(1:6,2,3)
+x[1,]
+x[,2]
+x <- c(1,2,NA,4,NA,5)
+bad <- is.na(x)
+x[!bad]
+y <- c("a","b",NA,"d",NA)
+x <- c(1,2,NA,4,NA,5)
+good <- complete.cases(x,y)
+x <- c(1,2,NA,4,NA,5)
+y <- c("a","b",NA,"d",NA, "f")
+good <- complete.cases(x,y)
+x[good]
+y[good]
+x <- 1:4
+y<-2
+x+y
+read.csv(hw1_data.csv)
+read.csv(file = "hw1_data.csv")
+table1<-read.csv(file = "hw1_data.csv")
+table1
+table1[1]
+table1[,152:153]
+table1[c(152,153)]
+table1[c(152,153),]
+table1[47,]
+bad <- is.na(table1[1])
+bad
+length(bad)
+table1[bad]
+length(table1[bad])
+bad
+table1[bad]
+table1[1,bad]
+table1[1,]
+bad <- is.na(table1[,1])
+bad
+table1[bad,1]
+table1[1,bad]
+sum(bad)
+table1[!bad]
+table1[,!bad]
+table1[,1]
+table1[,1 and !bad]
+ozone<-table1[,1]
+ozone
+ozone[!bad]
+mean(ozone[!bad])
+table1
+table1[1]
+table1[]
+table2 <- subset(table1, Ozone >31 & Temp > 90)
+table2
+mean(table2[,2])
+table2[,2]
+table1
+table2 <- subset(table1, Month =6)
+table2
+table2 <- subset(table1, Month ==6)
+table2
+mean(table2[,4])
+table2 <- subset(table1, Month ==5)
+table2
+max(table2[,1])
+bad <-is.na(table2)
+number <-table2[bad]
+number
